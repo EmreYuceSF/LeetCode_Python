@@ -1,5 +1,6 @@
 def merge(nums1, m, nums2, n):
-    """************************
+    """
+    ****************************************************************
         given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
     Merge nums1 and nums2 into a single array sorted in non-decreasing order.
@@ -9,9 +10,10 @@ def merge(nums1, m, nums2, n):
 
         Args:
             nums1 (list): list of int
-            m (int): expexcted lenth of elements from nums1 list
+            m (int): expected length of elements from nums1 list
             nums2 (list): list of int
-            n (int): expexcted lenth of elements from 2 list
+            n (int): expected length of elements from 2 list
+    *****************************************************************
     """
     nums1[m:] = nums2[:n]
     nums1.sort()
