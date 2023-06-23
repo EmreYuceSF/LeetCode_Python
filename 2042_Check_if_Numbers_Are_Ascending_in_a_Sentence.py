@@ -22,4 +22,4 @@ def areNumbersAscending(s: str) -> bool:
     return result_list == sorted(result_list)
 
 
-print(areNumbersAscending("4 5 3 11 26"))
+
