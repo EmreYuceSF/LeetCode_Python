@@ -20,13 +20,12 @@ def sortSentence(s: str) -> str:
         Returns:
             str
     """
-    list_collection = s.split(" ")
-    digit_to_word_dict = {}
+    list_collection = s.split(" ") #create a list and store the words with digit in the end of them
+    digit_to_word_dict = {}   
     new_string = ""
     for word in list_collection:
-        digit = list(word).pop()
-
-        digit_to_word_dict[digit] = word[:-1]
+        digit = list(word).pop() #store the digits from the words
+        digit_to_word_dict[digit] = word[:-1] #store in the dict with key=digit, value=word
     for value in sorted(digit_to_word_dict):
-        new_string = new_string + " " + (digit_to_word_dict[value])
+        new_string = new_string + " " + (digit_to_word_dict[value]) #create a new string from values of sorted dict
     return new_string.lstrip()
